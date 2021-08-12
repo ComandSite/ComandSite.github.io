@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: white; /* #ffd429 */
+  width: 223px;
+  height: 55px;
+  text-decoration: none;
+  cursor: pointer;
+
+  padding: 22px 31px 22px 31px;
+
+  color: black;
+  font-size: 15px;
+
+  border-radius: 4px;
+}
+
+.button {
+  border: 0;
+  width: 366px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-weight: 900;
+}
+
+.animated {
+  opacity: 0;
+}
+
+/* HEADER */
+.header {
+  background: -webkit-linear-gradient(
+    135deg,
+    rgb(77, 190, 254),
+    rgb(55, 143, 217)
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgb(77, 190, 254),
+    rgb(55, 143, 217)
+  );
+  background: linear-gradient(135deg, rgb(77, 190, 254), rgb(55, 143, 217));
+  display: flex;
+  justify-content: center;
+  padding-bottom: 81px;
+  padding-top: 72px;
+}
+
+.wrapperHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.logoWAYUP {
+  padding-bottom: 147px;
+}
+
+.introHeader {
+  line-height: 20px;
+  max-width: 397px;
+}
+
+.introHeader,
+.titleHeader {
+  color: white;
+}
+
+.titleHeader span {
+  font-size: 60px;
+}
+
+.goFuture {
+  padding-top: 50px;
+}
+
+.contentHeader {
+}
+
+.goodbyeRussia {
+  margin-left: 35px;
+}
+
+/* SECTION FUTURE */
+
+.future {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 118px;
+  padding-top: 106px;
+}
+
+.contentFuture {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleFuture {
+  text-align: center;
+  margin-bottom: 79px;
+}
+
+.introFuture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.block h3,
+.block p {
+  text-align: center;
+}
+
+.block {
+  width: 262px;
+}
+
+/* SECTION TICKET_IN_FUTURE */
+.ticketInFuture {
+  background: #efecf4;
+  display: flex;
+  justify-content: center;
+  padding-top: 103px;
+  padding-bottom: 104px;
+}
+
+.input {
+  width: 338px;
+  padding: 16px 0 16px 0;
+  padding-left: 26px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.contentTicketInFuture {
+  display: grid;
+  justify-content: center;
+}
+
+.titleTicketInFuture {
+  margin-bottom: 56px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.inputTicketInFuture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER */
+.footer {
+  background: #164d7a;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.contentFooter {
+  padding: 62px 0 62px 0;
+}
+
+/* ADAPTIVE */
+/*
+Extra small(<576px): None(auto)
+Smal(>=576px): 540px
+Medium(>=768px): 720px
+Large(>=992px): 960px
+Extra large(>=1200px): 1140px
+*/
+/* 992 - 1200 px */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* 768 - 992 */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  /* HEADER */
+  .wrapperHeader {
+    flex-direction: column;
+  }
+
+  .goodbyeRussia {
+    display: none;
+  }
+}
+
+/* 576 - 768 */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  /* SECTION FUTURE */
+  .introFuture {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+/* 280 - 576 */
+@media screen and (max-width: 576px) {
+  .container {
+    width: auto;
+  }
+
+  /* HEADER */
+  .goodbyeRussia {
+    display: none;
+  }
+
+  .wrapperHeader {
+    margin-left: 10px;
+  }
+
+  /* SECTION TICKET_IN_FUTURE */
+  .input {
+    width: 228px;
+  }
+
+  .button {
+    width: 256px;
+  }
+
+  /* SECTION FOOTER */
+
+  .contentFooter {
+    padding-left: 10%;
+  }
+}
+
+/* 0 - 280 */
+
+@media screen and (max-width: 290px) {
+  /* SECTION TICKET_IN_FUTURE */
+  .input {
+    width: 220px;
+    padding-left: 5px;
+    padding-right: 21px;
+  }
+
+  .button {
+    width: 247px;
+  }
+}
